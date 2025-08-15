@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Design & Development Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gradient-to-r from-green-100 to-green-300 min-h-screen flex flex-col">
+
+  <!-- Header Section -->
+  <header class="relative bg-white shadow-md shadow-green-400/25">
+    <div class="header-corner header-corner-top-right"></div>
+    <div class="container mx-auto flex items-center justify-between py-6 px-6 md:px-20 relative z-10">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-green-700 rounded-tr-md relative">
+          <div class="absolute top-0 left-0 w-3 h-3 bg-green-400 rounded-tl-md"></div>
+        </div>
+        <span class="font-bold text-green-800 text-lg select-none">LOGO</span>
+      </div>
+      <!-- Nav Links -->
+      <nav>
+        <ul class="flex space-x-12 text-blue-900 font-semibold text-sm tracking-tight">
+          <li><a href="#" class="hover:text-green-700 transition">HOME</a></li>
+          <li><a href="#" class="hover:text-green-700 transition">ABOUT US</a></li>
+          <li><a href="#" class="hover:text-green-700 transition">CONTACT US</a></li>
+          <li><a href="#" class="hover:text-green-700 transition">CONTENT</a></li>
+          <li><a href="#" class="hover:text-green-700 transition">SERVICES</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Main Section -->
+  <main class="flex-grow container mx-auto px-6 md:px-20 py-16 grid md:grid-cols-2 gap-12 items-center">
+    <!-- Left Text -->
+    <section class="space-y-6 max-w-xl">
+      <h1 class="text-5xl font-extrabold text-blue-900 leading-tight">
+        WEB <br />
+        DESIGN &<br />
+        DEVELOPMENT
+      </h1>
+      <div>
+        <h3 class="text-xl font-semibold text-blue-900 border-b-2 border-blue-900 inline-block pb-1 w-fit mb-2 select-text">Lorem ipsum</h3>
+        <p class="text-gray-700 text-base leading-relaxed select-text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </p>
+      </div>
+      <button class="btn-primary mt-4 select-none" aria-label="Read more about web design and development">
+        READ MORE
+      </button>
+    </section>
+
+    <!-- Right Illustration -->
+    <section class="relative flex justify-center">
+      <div class="relative bg-green-400/70 rounded-full w-[350px] h-[350px] md:w-[400px] md:h-[400px]"></div>
+      <div class="absolute inset-0 flex justify-center items-center">
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6594b9ff-84e0-4194-b8a8-0e2e5e1218c3.png" 
+          alt="Vector illustration of a woman wearing a white mask working on a laptop while sitting cross-legged on a bright blue sofa next to a wooden side table with a steaming cup and leafy green houseplant in a terracotta pot, abstract green shapes in background" 
+          class="w-80 h-80 md:w-[350px] md:h-[350px] object-contain drop-shadow-lg rounded-lg" 
+          onerror="this.style.display='none';"
+        />
+      </div>
+      <div class="absolute left-1/4 top-1/2 bg-green-700 shadow-lg rounded w-16 h-16 opacity-70 mix-blend-multiply hidden md:block"></div>
+    </section>
+  </main>
+
+  <!-- Additional Sections - Example: Features, About, Contact -->
+  <section class="container mx-auto px-6 md:px-20 py-16 space-y-16">
+    <!-- Features -->
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow cursor-pointer">
+        <h4 class="text-green-800 font-bold text-xl mb-3">Creative Design</h4>
+        <p class="text-gray-600">Craft visually stunning and user-friendly websites tailored to your brand's identity.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow cursor-pointer">
+        <h4 class="text-green-800 font-bold text-xl mb-3">Responsive Development</h4>
+        <p class="text-gray-600">Build fast and mobile-friendly web applications that look great on all devices.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow cursor-pointer">
+        <h4 class="text-green-800 font-bold text-xl mb-3">SEO Optimized</h4>
+        <p class="text-gray-600">Implement strategies to increase your website's visibility and ranking on search engines.</p>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <section class="bg-green-50 rounded-xl p-10 shadow-lg">
+      <h2 class="text-3xl font-extrabold text-green-800 mb-6">About Our Company</h2>
+      <p class="text-gray-700 max-w-4xl leading-relaxed">
+        We specialize in delivering high-quality web design and development services with a focus on innovation, usability, and performance. Our team of experts is passionate about creating digital experiences that drive success and growth for our clients.
+      </p>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="mt-16 bg-white rounded-xl py-12 px-8 shadow-xl max-w-4xl mx-auto">
+      <h2 class="text-3xl font-extrabold text-green-800 mb-6 text-center">Contact Us</h2>
+      <form class="space-y-6 max-w-md mx-auto" aria-label="Contact form">
+        <div>
+          <label for="name" class="block font-semibold text-gray-700 mb-1">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name" class="w-full border border-green-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500" />
+        </div>
+        <div>
+          <label for="email" class="block font-semibold text-gray-700 mb-1">Email</label>
+          <input type="email" id="email" name="email" required placeholder="example@domain.com" class="w-full border border-green-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500" />
+        </div>
+        <div>
+          <label for="message" class="block font-semibold text-gray-700 mb-1">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Your message here..." class="w-full border border-green-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"></textarea>
+        </div>
+        <button type="submit" class="btn-primary w-full text-center">Send Message</button>
+      </form>
+    </section>
+  </section>
+
+  <!-- Heavy Large Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3 class="footer-title">About Us</h3>
+        <p class="footer-text">
+          We are dedicated to delivering outstanding web design and development solutions with a green-focused approach, blending creativity with technology to empower your digital presence.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-title">Quick Links</h3>
+        <a href="#" class="footer-link" tabindex="0">Home</a>
+        <a href="#" class="footer-link" tabindex="0">Services</a>
+        <a href="#" class="footer-link" tabindex="0">Portfolio</a>
+        <a href="#" class="footer-link" tabindex="0">Blog</a>
+        <a href="#" class="footer-link" tabindex="0">Contact</a>
+      </div>
+      <div class="footer-column">
+        <h3 class="footer-title">Contact Info</h3>
+        <p class="footer-text">123 Green Street, Nature City, Earth</p>
+        <p class="footer-text">Phone: +123 456 7890</p>
+        <p class="footer-text">Email: info@greenwebdev.com</p>
+        <p class="footer-text">Follow us:</p>
+        <div class="flex space-x-4 mt-2">
+          <a href="#" class="footer-link" aria-label="Facebook" tabindex="0">Facebook</a>
+          <a href="#" class="footer-link" aria-label="Twitter" tabindex="0">Twitter</a>
+          <a href="#" class="footer-link" aria-label="LinkedIn" tabindex="0">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
